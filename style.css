@@ -1,0 +1,58 @@
+/* article {
+    padding-top: 30px;
+    clear: both;
+    overflow: auto;
+    width: 100%;} */
+header
+{  
+    font-family: Oswald;
+    color: whitesmoke;
+    background-color: black;
+    width: 100%;
+    min-width: 999px;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+h1
+{   height: 5px;
+    font-family: Oswald;
+    text-align: center;
+   
+}
+
+
+
+nav li{
+  display: inline-block;
+  float: right;
+  padding: 15px 20px 0px 10px;
+  height: 35px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+
+
+div{
+    clear: both;
+    margin-top: 140px;
+
+
+}
+article ul{
+    float: left;
+    border-right: 2px solid black;
+}
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoDnUw6mCws7paG3yoFD_yezyl5n9-5aMzw5eh9frcWuqEb-Jp);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+

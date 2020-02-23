@@ -220,5 +220,5 @@ var Lime= {
     }
    
 }
-Lima.randomCusNum();
+Lime.randomCusNum();
 Lime.render();

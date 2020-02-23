@@ -28,6 +28,7 @@ var Seattle= {
         }
     },
     render: function(){
+        var sum =0;
         this.setCookiesPerHour();
         var continer= document.getElementById('Seattle');
         var article1= document.createElement('article');
@@ -44,7 +45,12 @@ var Seattle= {
             ul1.appendChild(li1);
             li1.textContent= 
             hours[i]+ "    :   "+this.cookiesPerHour[i] + "    cookies";
+            sum=sum+this.cookiesPerHour[i];
+            console.log(sum);
         }
+        var li2= document.createElement('li');
+        ul1.appendChild(li2);
+        li2.textContent= "Total  : " + sum;
     }
    
 }
@@ -71,6 +77,7 @@ var Tokyo= {
         }
     },
     render: function(){
+        var sum =0;
         this.setCookiesPerHour();
         var continer= document.getElementById('Seattle');
         var article1= document.createElement('article');
@@ -87,7 +94,12 @@ var Tokyo= {
             ul1.appendChild(li1);
             li1.textContent= 
             hours[i]+ "    :   "+this.cookiesPerHour[i] + "    cookies";
+            sum=sum+this.cookiesPerHour[i];
+            console.log(sum);
         }
+        var li2= document.createElement('li');
+        ul1.appendChild(li2);
+        li2.textContent= "Total  : " + sum;
     }
    
 }
@@ -114,6 +126,7 @@ var Dubai= {
         }
     },
     render: function(){
+        var sum =0;
         this.setCookiesPerHour();
         var continer= document.getElementById('Seattle');
         var article1= document.createElement('article');
@@ -130,7 +143,12 @@ var Dubai= {
             ul1.appendChild(li1);
             li1.textContent= 
             hours[i]+ "    :   "+this.cookiesPerHour[i] + "    cookies";
+            sum=sum+this.cookiesPerHour[i];
+            console.log(sum);
         }
+        var li2= document.createElement('li');
+        ul1.appendChild(li2);
+        li2.textContent= "Total  : " + sum;
     }
    
 }
@@ -156,6 +174,7 @@ var Paris= {
         }
     },
     render: function(){
+        var sum =0;
         this.setCookiesPerHour();
         var continer= document.getElementById('Seattle');
         var article1= document.createElement('article');
@@ -172,7 +191,12 @@ var Paris= {
             ul1.appendChild(li1);
             li1.textContent= 
             hours[i]+ "    :   "+this.cookiesPerHour[i] + "    cookies";
+            sum=sum+this.cookiesPerHour[i];
+            console.log(sum);
         }
+        var li2= document.createElement('li');
+        ul1.appendChild(li2);
+        li2.textContent= "Total  : " + sum;
     }
    
 }
@@ -199,7 +223,7 @@ var Lime= {
           this.cookiesPerHour[i]= Math.floor(this.cusPerHour[i] * this.avr);
         }
     },
-    render: function(){
+    render: function(){ var sum =0;
         this.setCookiesPerHour();
         var continer= document.getElementById('Seattle');
         var article1= document.createElement('article');
@@ -216,7 +240,12 @@ var Lime= {
             ul1.appendChild(li1);
             li1.textContent= 
             hours[i]+ "    :   "+this.cookiesPerHour[i] + "    cookies";
+            sum=sum+this.cookiesPerHour[i];
+            console.log(sum);
         }
+        var li2= document.createElement('li');
+        ul1.appendChild(li2);
+        li2.textContent= "Total  : " + sum;
     }
    
 }

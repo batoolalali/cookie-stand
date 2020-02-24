@@ -7,7 +7,8 @@ header
 {  
     font-family: Oswald;
     color: whitesmoke;
-    background-color: black;
+    background-color: black
+    ;
     width: 100%;
     min-width: 999px;
     margin: 0px;
@@ -50,18 +51,34 @@ div{
 
 }
 article {
-    border-right: 2px solid black;
-    overflow: auto;
-    padding-right: 10px;
-    padding-top: 0px;
-    float: left;
-width: 250px;
-margin: 10px;
-
+    border-right: 2px solid white;
+   
 }
 
+ table{
+   empty-cells: show;
+    table-layout: fixed;
+    width: 1500px;
+    height: 100px;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
+table tr
+{
+    
+    border: 2px solid white;
+}
+table tr td
+   { border: 2px solid white;
+
+} 
+th {
+    table-layout: fixed;
+    border: 2px solid white;
+}
 body{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoDnUw6mCws7paG3yoFD_yezyl5n9-5aMzw5eh9frcWuqEb-Jp);
+    background-image: url(https://evye.gr/wp-content/uploads/2018/03/wallpaper-website-background-dark-wooden-website-background.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
 }

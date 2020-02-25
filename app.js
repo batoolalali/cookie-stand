@@ -116,7 +116,7 @@ var Seattle = new Shop('Seattle', 23, 65, 6.3);
 var Tokyo = new Shop('Tokyo', 3, 24, 1.2);
 var Dubai = new Shop('Dubai', 11, 38, 3.7);
 var Paris = new Shop('Paris', 20, 65, 2.3);
-var Lime = new Shop('Lime', 2, 16, 4.6);
+var Lima = new Shop('Lima', 2, 16, 4.6);
 
 
 
@@ -143,7 +143,6 @@ for (var i = 0; i < hours.length; i++) {
 
         colomSum = colomSum + shops[j].cookiesPerHour[i];
         
-
     }
     totalOftatals = totalOftatals + colomSum;
     var tdfoot = document.createElement('td');

@@ -6,41 +6,71 @@
 header
 {  
     font-family: Oswald;
-    color: whitesmoke;
-    background-color: black
-    ;
+    color: white;
+    background-image: url(class-8/lab-b/head.PNG);
+    opacity: 0.85;
     width: 100%;
     min-width: 999px;
+    height: 40%;
     margin: 0px;
     padding: 0px;
     top: 0px;
     left: 0;
     right: 0;
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.websites
+{   margin-top: 250px;
+    padding-top: 30px;
+    width: 770px;
+    float: left;
+
 }
 
 h1
-{   height: 5px;
+{   margin: auto auto;
+    padding: 15px;
     font-family: Oswald;
     text-align: center;
-   
+    color:white;
+}
+
+h2{
+    color: white;
 }
 
 .icon
 {
-    
-    width: 100px;
-    height: 50px;
+    float: left;
+    width: 150px;
+    height: 90px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 nav li{
   display: inline-block;
-  float: right;
-  padding: 15px 20px 0px 10px;
+  float: left;
   height: 35px;
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
+  text-decoration: none;
+  color: white;
 }
+nav li a{
+    display: inline-block;
+    float: left;
+    height: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+    padding-top: 150px;
+  }
 
 
 
@@ -56,7 +86,10 @@ article {
 }
 
  table{
-   empty-cells: show;
+    background-color:black ;
+    opacity: .8;
+    opacity: brown;
+    empty-cells: show;
     table-layout: fixed;
     width: 1500px;
     height: 100px;
@@ -78,9 +111,59 @@ th {
     border: 2px solid white;
 }
 body{
-    background-image: url(https://evye.gr/wp-content/uploads/2018/03/wallpaper-website-background-dark-wooden-website-background.jpg);
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+    background-color: black;
+}
+
+span{
+
+    width: 90%;
+    height: 90%;
+           
+}
+
+.locIcon
+{
+    width: 40px;
+    height: 40px;
 }
 
 
+
+img 
+{   
+    width: 285px;
+    height: 195px;
+}
+p{
+    color:#d2a679;
+    text-align: center;  
+    font-weight: bold;
+    border: 2px solid #d2a679;
+    width: 200px;
+    margin-left: 200px;
+}
+article {
+
+    padding-top: 250px;
+    clear: both;
+    overflow: auto;
+    width: 100%;}
+
+    aside {
+        margin-top: 300px;
+        width: 430px;
+        float: left;
+        padding: 0px 0px 0px 20px;}
+    
+        aside section a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;}
+            aside section a:hover {
+            color:#d2a679;
+            background-color: #efefef;}
+            a {
+            color:#d2a679;
+            text-decoration: none;}
+            h1, h2, h3 {
+            font-weight: normal;}

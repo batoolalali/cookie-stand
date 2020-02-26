@@ -19,6 +19,9 @@ function Shop(location, min, max, avr) {
     shops.push(this);
 }
 
+
+
+
 Shop.prototype.randomCusNum = function () {
     for (var i = 0; i < hours.length; i++) {
         this.cusPerHour[i] = Math.floor(getRandomCus(this.max, this.min));
@@ -47,8 +50,8 @@ var th0 = document.createElement('th');
 function tableHeader()
 {
    
-var article1 = document.createElement('article');
-continer.appendChild(article1);
+var div1 = document.createElement('div');
+continer.appendChild(div1);
 continer.appendChild(tableE);
 
 tableE.appendChild(tr0);
@@ -120,15 +123,53 @@ var Lima = new Shop('Lima', 2, 16, 4.6);
 
 
 
+
 for (var i = 0; i < shops.length; i++) {
     shops[i].randomCusNum();
     shops[i].render();
 }
+
 tablefooter();
+console.log(tableE.lastChild);
+//var submt=false;
+var myForm=document.getElementById('shops');
+myForm.addEventListener('submit', function(event){
+    event.preventDefault();
+var location=event.target.location.value;
+var minimum=event.target.min.value;
+var maximum=event.target.max.value;
+minimum=parseInt(minimum);
+maximum=parseInt(maximum);
+var avarge=event.target.avr.value;
+avarge=parseFloat(avarge);
+
+if (maximum>minimum)
+{
+    tableE.removeChild(tableE.lastChild);
+    var addedShop= new Shop(location,minimum,maximum,avarge);
+addedShop.randomCusNum();
+addedShop.render();
+console.log(addedShop.cookiesPerHour);
+console.log(addedShop.cusPerHour);
+//submt=true;
+tablefooter();
+}
+
+else{
+alert("the maximum number MUST be more than the minimum" );}
+
+});
+
+// if (submt==true)
+
+
+// {tableE.removeChild(tableE.lastChild);}
+
+
 
 function tablefooter()
 {
-    var tr3 = document.createElement('tr');
+    var tr3 = document.createElement('tfoot');
 tableE.appendChild(tr3);
 var tdfooter = document.createElement('td');
 tr3.appendChild(tdfooter);
@@ -153,5 +194,7 @@ for (var i = 0; i < hours.length; i++) {
 var tdtotal = document.createElement('td');
 tr3.appendChild(tdtotal);
 tdtotal.textContent = totalOftatals;
+
 }
+
 

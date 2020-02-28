@@ -1,15 +1,13 @@
-/* article {
-    padding-top: 30px;
-    clear: both;
-    overflow: auto;
-    width: 100%;} */
-
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap');
 header
 {  
     font-family: Oswald;
-    color: white;
+    color: grey;
     background-image: url(class-8/lab-b/head.PNG);
-    opacity: 0.85;
     width: 100%;
     min-width: 999px;
     height: 40%;
@@ -33,16 +31,34 @@ section.websites
 
 h1
 {   margin: auto auto;
-    padding: 15px;
-    font-family: Oswald;
+    padding-right: 30px;
+    font-family: Anton;
     text-align: center;
     color:white;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+input:hover{
+background-color: black;
+color: grey;
+
+}
+tfoot{
+    color: black;
+    background-color: grey;
 }
 
 h2{
     color: white;
+    font-family: "Yeon Sung";
+
 }
 
+.city{
+    font-family: Courgette;
+}
 .icon
 {
     float: left;
@@ -56,24 +72,37 @@ nav li{
   display: inline-block;
   float: left;
   height: 35px;
-  font-family: 'Oswald', sans-serif;
   font-size: 22px;
   text-decoration: none;
-  color: white;
+  color: grey;
+
 }
 nav li a{
     display: inline-block;
-    float: left;
     height: 35px;
-    font-family: 'Oswald', sans-serif;
+    font-family: Anton;
     font-size: 22px;
     text-decoration: none;
     color: white;
     padding-right: 30px;
     padding-top: 150px;
+    font-weight: 500;
+    
+  }
+  table{
+      background-color: #f6f6f6;
   }
 
+#maxlabel{
+    padding-right: 12px;
+}
 
+#minlabel{
+    padding-right: 16px;
+}
+#loclabel{
+    padding-right: 93px;
+}
 
 div{
     clear: both;
@@ -82,36 +111,42 @@ div{
 
 }
 article {
-    border-right: 2px solid white;
+    border-right: 2px solid grey;
    
 }
 
+
  table{
-    opacity: brown;
     empty-cells: show;
     table-layout: fixed;
     width: 1500px;
     height: 100px;
-    border: 2px solid white;
+    border: 2px solid grey;
     text-align: center;
-    color: white;
+    color: grey;
     margin-bottom: 300px;
 }
 table tr
 {
     
-    border: 2px solid white;
+    border: 2px solid grey;
 }
-table tr td
-   { border: 2px solid white;
+ tr td
+   { border: 2px solid grey;
+    font-family: "Verdana";
+
 
 } 
 th {
     table-layout: fixed;
-    border: 2px solid white;
+    border: 2px solid grey;
+    font-family: "Patrick Hand";
+
 }
+
 tfoot{
-    border: 2px solid white;
+    border: 2px solid grey;
+    font-family: Verdana;
 }
 body{
     background-color: black;
@@ -141,9 +176,12 @@ p{
     color:#d2a679;
     text-align: center;  
     font-weight: bold;
-    border: 2px solid #d2a679;
+    border: 1px solid #d2a679;
     width: 200px;
     margin-left: 200px;
+    font-family: "Yeon Sung";
+    border-radius: 15px;
+
 }
 article {
 
@@ -152,36 +190,41 @@ article {
     overflow: auto;
     width: 100%;}
 
-    aside {
-        margin-top: 300px;
-        width: 430px;
-        float: left;
-        padding: 0px 0px 0px 20px;}
-    
-        aside section a {
-            display: block;
-            padding: 10px;
-            border-bottom: 1px solid #eeeeee;}
-            aside section a:hover {
-            color:#d2a679;
-            background-color: #efefef;}
-            a {
-            color:#d2a679;
-            text-decoration: none;}
-            h1, h2, h3 {
-            font-weight: normal;}
+aside {
+    margin-top: 300px;
+    width: 430px;
+    float: left;
+    padding: 0px 0px 0px 20px;}
+ aside section a {
+     display: block;
+     padding: 10px;
+     border-bottom: 1px solid #eeeeee;}
+aside section a:hover {
+     color:#d2a679;
+     background-color: #efefef;}
+a {
+     color:#d2a679;
+     text-decoration: none;}
+h1, h2, h3 {
+     font-weight: normal;}
 
 #shops{
     margin-top: 300px;
-    color: white;
+    color: grey;
 }
 
 legend{
-    color: white;
+    color: grey;
+    font-family: "Patrick Hand";
+    font-weight: 700;
+    font-size: 40px;
 }
 
 label{
-    color: white;
+    color: grey;
+    font-family: "Old Standard TT";
+    font-weight: bold;
+
 
 }
 

@@ -142,7 +142,11 @@ minimum=parseInt(minimum);
 maximum=parseInt(maximum);
 var avarge=event.target.avr.value;
 avarge=parseFloat(avarge);
-
+console.log(location);
+if (location=='')
+{
+    alert("Please enter a location name");
+}else
 if (maximum>minimum)
 {
     tableE.removeChild(tableE.lastChild);

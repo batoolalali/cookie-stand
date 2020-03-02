@@ -146,6 +146,7 @@ console.log(location);
 if (location=='')
 {
     alert("Please enter a location name");
+    console.log("Hi");
 }else
 if (maximum>minimum)
 {

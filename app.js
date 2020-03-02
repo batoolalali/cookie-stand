@@ -131,21 +131,32 @@ tablefooter();
 var myForm = document.getElementById('shops');
 myForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    var location = event.target.location.value;
-    var minimum = event.target.min.value;
-    var maximum = event.target.max.value;
-    minimum = parseInt(minimum);
-    maximum = parseInt(maximum);
-    var avarge = event.target.avr.value;
-    avarge = parseFloat(avarge);
 
-    if (maximum > minimum) {
-        tableE.removeChild(tableE.lastChild);
-        var addedShop = new Shop(location, minimum, maximum, avarge);
-        addedShop.randomCusNum();
-        addedShop.render();
-        tablefooter();
-    }
+var location=event.target.location.value;
+var minimum=event.target.min.value;
+var maximum=event.target.max.value;
+minimum=parseInt(minimum);
+maximum=parseInt(maximum);
+var avarge=event.target.avr.value;
+avarge=parseFloat(avarge);
+console.log(location);
+if (location=='')
+{
+    alert("Please enter a location name");
+    console.log("Hi");
+}else
+if (maximum>minimum)
+{
+    tableE.removeChild(tableE.lastChild);
+    var addedShop= new Shop(location,minimum,maximum,avarge);
+addedShop.randomCusNum();
+addedShop.render();
+console.log(addedShop.cookiesPerHour);
+console.log(addedShop.cusPerHour);
+//submt=true;
+tablefooter();
+}
+
 
     else {
         alert("the maximum number MUST be more than the minimum");
